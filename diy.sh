@@ -12,4 +12,5 @@ echo 0xDEADBEEF > package/base-files/files/config/google_fu_mode
 echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.default
 git clone https://github.com/z826540272/openwrt-smartdns.git feeds/packages/net/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
+./scripts/feeds clean
 ./scripts/feeds update -a && ./scripts/feeds install -a
