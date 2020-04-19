@@ -13,4 +13,5 @@ echo 0xDEADBEEF > package/base-files/files/config/google_fu_mode
 git clone https://github.com/z826540272/openwrt-smartdns.git feeds/packages/net/smartdns
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kenzok8/small.git package/small
 ./scripts/feeds update -a && ./scripts/feeds install -a
