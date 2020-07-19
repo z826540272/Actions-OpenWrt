@@ -18,5 +18,6 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 sed -i 's/192.168.1.1/192.168.100.2/g' package/base-files/files/bin/config_generate
 mkdir package/base-files/files/config
 echo 0xDEADBEEF > package/base-files/files/config/google_fu_mode
+git revert -n "11848e8b4309434786e95a289f37df309061fac4"
 
-git revert -n 11848e8b4309434786e95a289f37df309061fac4
+
